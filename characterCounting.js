@@ -5,25 +5,23 @@ var wordStr = words.join('');
 //functions can only return primitive data type: num, boo, null, string
 
 function countLetters(wordStr) {
-  var obj = {};
-  for(var i = 0; i < wordStr.length; i++){
+  var result = {};
+  for (var i = 0; i < wordStr.length; i++){
     var letter = wordStr.charAt(i);
-    if(obj[letter]) {
-      obj[letter] += 1;
+    if (result[letter]) {
+      result[letter] += 1;
     } else {
-      obj[letter] = 1;
+      result[letter] = 1;
     }
   }
-  return obj;
+  return result;
  }
 
 //formatting output to match assignment example
 var letterObj = countLetters(wordStr);
 console.log('{');
-for(letterKey in letterObj) {
+for (letterKey in letterObj) {
   var letterValue = letterObj[letterKey];
   console.log('  ' + letterKey + ': ' + letterValue + ',');
 }
 console.log('}');
-
-
