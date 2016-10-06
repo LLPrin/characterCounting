@@ -1,17 +1,4 @@
-
-// var userInput = { input: process.argv[2] };
-// var word = userInput["input"];
-
-// var wordObj = { char: word.split('') };
-// var letter = wordObj["char"];
-    // var letterArray = []
-    // for(var i = 0; i < word.length; i++) {
-    //     letterArray.push(word.slice(i, i + 1));
-    // }
-    // return letterArray;
-
 var words = process.argv.slice(2);
-// join always returns a string
 var wordStr = words.join('');
 
 //Write a function that can return unique characters and how many instances found
