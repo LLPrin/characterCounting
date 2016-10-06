@@ -17,10 +17,12 @@ function countLetters(wordStr) {
   return obj;
  }
 
+//formatting output to match assignment example
 var letterObj = countLetters(wordStr);
 console.log('{');
-for(letter in letterObj) {
-  console.log('  ' + letter + ': ' + letterObj[letter] + ',');
+for(letterKey in letterObj) {
+  var letterValue = letterObj[letterKey];
+  console.log('  ' + letterKey + ': ' + letterValue + ',');
 }
 console.log('}');
 
