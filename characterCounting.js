@@ -30,7 +30,11 @@ function countLetters(wordStr) {
   return obj;
  }
 
+var letterObj = countLetters(wordStr);
+console.log('{');
+for(letter in letterObj) {
+  console.log('  ' + letter + ': ' + letterObj[letter] + ',');
+}
+console.log('}');
 
-
- console.log(countLetters(wordStr));
 
